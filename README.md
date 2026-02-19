@@ -28,3 +28,16 @@ Addis_Transit_Sim/
 ├── resources/            # Additional assets, stops, and passenger definitions
 ├── outputs/              # Simulation results and logs (Ignored by Git)
 └── README.md
+
+
+## 🛠 Getting Started
+
+### Prerequisites
+* **SUMO:** [Download and Install SUMO](https://sumo.dlr.de/docs/Installing/index.html). Ensure the `SUMO_HOME` environment variable is set.
+* **Python 3.8+:** Required for running the automation scripts and TraCI interface.
+
+### Installation
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/surak-alf/addis_trans.git](https://github.com/surak-alf/addis_trans.git)
+   cd addis_trans
