@@ -29,7 +29,7 @@ Addis_Transit_Sim/
 ├── outputs/              # Simulation results and logs (Ignored by Git)
 └── README.md
 
-
+---
 ## 🛠 Getting Started
 
 ### Prerequisites
@@ -41,3 +41,33 @@ Addis_Transit_Sim/
    ```bash
    git clone [https://github.com/surak-alf/addis_trans.git](https://github.com/surak-alf/addis_trans.git)
    cd addis_trans
+
+### 🐍 Install Python Dependencies
+To ensure all scripts run correctly, install the required libraries:
+
+```bash
+pip install -r requirements.txt   
+
+
+### 📋 Simulation Parameters
+To maintain consistency across runs, the simulation is configured with the following parameters:
+
+* **Step Length:** `1.0s` (One update per simulation second)
+* **Time Period:** `21590` to `30000` (Simulating the morning peak traffic hours)
+* **Outputs:** * `FCD`: Floating Car Data for detailed trajectory analysis.
+    * `TripInfo`: Aggregated statistics for each trip.
+    * `Emissions`: Data regarding the environmental impact.
+    * *Note: All outputs are generated in the `outputs/` directory.*
+
+---
+
+### ⚙️ Configuration
+The simulation architecture is built on these core components:
+
+| Component | File Name | Description |
+| :--- | :--- | :--- |
+| **Network** | `addis.net.xml` | Road network converted from OpenStreetMap (OSM). |
+| **Routes** | `routes.rou.xml` | Defines vehicle paths and pedestrian movement. |
+| **Additional** | `stops.add.xml` | Public transit stops and station locations. |
+| **Vehicles** | `vtypes.xml` | Physical definitions of different vehicle categories. |
+| **Demand** | `passengers.add.xml` | Multi-modal passenger demand and flows. |
