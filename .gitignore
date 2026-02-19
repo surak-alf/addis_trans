@@ -1,0 +1,86 @@
+#####################################
+# Python
+#####################################
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+dist/
+build/
+
+#####################################
+# Virtual Environments
+#####################################
+venv/
+env/
+.venv/
+ENV/
+
+#####################################
+# Jupyter / Colab
+#####################################
+.ipynb_checkpoints/
+*.ipynb
+*.nbconvert.ipynb
+
+#####################################
+# Model Checkpoints (DRL)
+#####################################
+*.pt
+*.pth
+*.h5
+*.ckpt
+models/
+checkpoints/
+
+#####################################
+# Logs & Results
+#####################################
+results/
+logs/
+*.log
+*.csv
+*.xlsx
+
+#####################################
+# SUMO Generated Files
+#####################################
+*.xml.gz
+*.trip.xml
+*.rou.alt.xml
+*.net.xml.gz
+*.sumo.cfg
+*.output.xml
+*.emissions.xml
+*.queue.xml
+*.fcd.xml
+
+# Ignore large SUMO output files
+outputs/*.xml
+#####################################
+# Temporary / Debug
+#####################################
+*.tmp
+*.bak
+*.swp
+
+#####################################
+# OS Files
+#####################################
+.DS_Store
+Thumbs.db
+desktop.ini
+
+#####################################
+# VSCode / IDE
+#####################################
+.vscode/
+.idea/
+
+#####################################
+# Large datasets
+#####################################
+data/raw/
+data/generated/

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-16 15:43:51.739572 by Eclipse SUMO gtfs2pt.py v1_25_0+0000-ac6c5a6752d
+<configuration>
+    <gtfs value="data/filtered_gtfs.zip"/>
+    <date value="20240115"/>
+    <network value="sumo_files/addis.net.xml"/>
+    <route-output value="sumo_files/routes.rou.xml"/>
+    <additional-output value="sumo_files/stops.add.xml"/>
+    <center-stops value="True"/>
+    <radius value="120.0"/>
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <busStop id="0.0" lane="26006215#0_0" startPos="0.00" endPos="13.00" friendlyPos="true" name="Legedadi Mission"/>
+    <busStop id="0.1" lane="61605508_0" startPos="592.40" endPos="605.40" friendlyPos="true" name="Tafo Condominium 1"/>
+    <busStop id="0.2" lane="61605508_0" startPos="1035.21" endPos="1048.21" friendlyPos="true" name="Tafo Condominium 2"/>
+    <busStop id="0.3" lane="61605508_0" startPos="1440.30" endPos="1453.30" friendlyPos="true" name="Tafo Mebrathail"/>
+    <busStop id="0.4" lane="61605508_0" startPos="1927.84" endPos="1940.84" friendlyPos="true" name="Yeka 03"/>
+    <busStop id="0.5" lane="61605508_0" startPos="2787.46" endPos="2800.46" friendlyPos="true" name="Zone 8"/>
+    <busStop id="0.6" lane="531914720_0" startPos="362.68" endPos="375.68" friendlyPos="true" name="Hill Bottom (Recreation)">
+        <access friendlyPos="true" lane="1171577067_1" pos="0.00" length="148.71"/>
+        <access friendlyPos="true" lane="1175871546_0" pos="74.35" length="104.31"/>
+    </busStop>
+    <busStop id="0.7" lane="612810674#1_0" startPos="183.81" endPos="196.81" friendlyPos="true" name="Ayat Train Station"/>
+    <busStop id="0.8" lane="77488893_0" startPos="65.54" endPos="78.54" friendlyPos="true" name="Ayat Zone 2"/>
+    <busStop id="0.9" lane="678134210_0" startPos="735.86" endPos="748.86" friendlyPos="true" name="Meri"/>
+    <busStop id="0.10" lane="95850715#0_0" startPos="105.88" endPos="118.88" friendlyPos="true" name="CMC (Apartments)"/>
+    <busStop id="0.11" lane="95850715#2_0" startPos="32.63" endPos="45.63" friendlyPos="true" name="St. Micheal Church"/>
+    <busStop id="0.12" lane="1136170022_0" startPos="617.13" endPos="630.13" friendlyPos="true" name="Civil Service College"/>
+    <busStop id="0.13" lane="200567867#0_0" startPos="368.43" endPos="381.43" friendlyPos="true" name="Management Institute"/>
+    <busStop id="0.14" lane="558107787_0" startPos="127.15" endPos="140.15" friendlyPos="true" name="Gurd-shola"/>
+    <busStop id="1.0" lane="61605505#2_0" startPos="163.60" endPos="174.88" friendlyPos="true" name="Century Mall"/>
+    <busStop id="1.1" lane="1176666666_0" startPos="739.88" endPos="752.88" friendlyPos="true" name="Gurd Shola"/>
+    <busStop id="1.2" lane="165070359#1_0" startPos="80.70" endPos="93.70" friendlyPos="true" name="Sealite Mihret"/>
+    <busStop id="1.3" lane="200567866#0_0" startPos="411.19" endPos="424.19" friendlyPos="true" name="Civil Service College"/>
+    <busStop id="1.4" lane="200567866#2_0" startPos="116.61" endPos="129.61" friendlyPos="true" name="St. Michael"/>
+    <busStop id="1.5" lane="1098266608_0" startPos="121.73" endPos="134.73" friendlyPos="true" name="CMC (Apartments)"/>
+    <busStop id="1.8" lane="678134214_0" startPos="166.03" endPos="172.53" friendlyPos="true" name="Ayat"/>
+    <busStop id="1.10" lane="25823215#0_0" startPos="45.48" endPos="58.48" friendlyPos="true" name="Ayat Roundabout">
+        <access friendlyPos="true" lane="1175871546_0" pos="67.19" length="93.23"/>
+        <access friendlyPos="true" lane="749949670_0" pos="234.20" length="127.14"/>
+        <access friendlyPos="true" lane="749949694_1" pos="31.16" length="146.58"/>
+    </busStop>
+    <busStop id="1.11" lane="25823215#0_0" startPos="1000.01" endPos="1013.01" friendlyPos="true" name="Yekiber Demena Church"/>
+    <busStop id="1.12" lane="25823215#1_0" startPos="274.78" endPos="287.78" friendlyPos="true" name="Yeka Condominium 1"/>
+    <busStop id="1.13" lane="25823215#1_0" startPos="567.45" endPos="580.45" friendlyPos="true" name="Tafo Gebrael"/>
+    <busStop id="1.14" lane="25823215#1_0" startPos="788.53" endPos="801.53" friendlyPos="true" name="Gebriel"/>
+    <busStop id="1.15" lane="25823215#1_0" startPos="1081.32" endPos="1094.32" friendlyPos="true" name="Tafo Mebrathail"/>
+    <busStop id="1.16" lane="25823215#1_0" startPos="1502.78" endPos="1515.78" friendlyPos="true" name="Tafo Condominium 2"/>
+    <busStop id="1.17" lane="25823215#1_0" startPos="1937.88" endPos="1950.88" friendlyPos="true" name="Tafo Condominium 1"/>
+    <busStop id="1.18" lane="25823215#1_0" startPos="2568.78" endPos="2577.95" friendlyPos="true" name="Aba Kiros Roundabout">
+        <access friendlyPos="true" lane="1175976364_0" pos="14.21" length="106.65"/>
+        <access friendlyPos="true" lane="1238531081_0" pos="68.16" length="124.96"/>
+    </busStop>
+    <busStop id="1.19" lane="112158741#2_0" startPos="38.44" endPos="51.44" friendlyPos="true" name="Aba Kiros">
+        <access friendlyPos="true" lane="-116750730#4_0" pos="0.00" length="128.56"/>
+        <access friendlyPos="true" lane="-576629487_0" pos="0.00" length="83.83"/>
+        <access friendlyPos="true" lane="116750730#4_0" pos="342.59" length="128.03"/>
+        <access friendlyPos="true" lane="576629487_0" pos="26.25" length="78.94"/>
+    </busStop>
+    <busStop id="1.20" lane="112158741#2_0" startPos="469.93" endPos="482.93" friendlyPos="true" name="Makefafeya"/>
+    <busStop id="1.21" lane="112158741#4_0" startPos="52.92" endPos="65.92" friendlyPos="true" name="Gari Tera">
+        <access friendlyPos="true" lane="-199007865_0" pos="391.41" length="97.97"/>
+        <access friendlyPos="true" lane="199007865_0" pos="0.00" length="102.75"/>
+    </busStop>
+    <busStop id="1.22" lane="112158741#7_0" startPos="211.63" endPos="224.63" friendlyPos="true" name="CCD"/>
+    <busStop id="1.23" lane="112158741#7_0" startPos="410.01" endPos="423.01" friendlyPos="true" name="140"/>
+    <busStop id="1.24" lane="754643297#0_0" startPos="0.00" endPos="13.00" friendlyPos="true" name="Legedadi Mission">
+        <access friendlyPos="true" lane="-199007850_0" pos="129.79" length="54.35"/>
+        <access friendlyPos="true" lane="199007796#1_0" pos="0.00" length="34.57"/>
+        <access friendlyPos="true" lane="199007850_0" pos="0.00" length="57.61"/>
+        <access friendlyPos="true" lane="578336199#0_0" pos="573.82" length="48.87"/>
+    </busStop>
+    <busStop id="4.0" lane="754690751#0_0" startPos="0.00" endPos="13.00" friendlyPos="true" name="Ayat Chefe Condominium"/>
+    <busStop id="4.1" lane="754690751#1_0" startPos="338.71" endPos="351.71" friendlyPos="true" name="Police Tabia"/>
+    <busStop id="4.2" lane="112142508#1_0" startPos="28.72" endPos="41.72" friendlyPos="true" name="Tsebel"/>
+    <busStop id="5.4" lane="749949694_0" startPos="42.00" endPos="55.00" friendlyPos="true" name="Ayat Square"/>
+    <busStop id="5.5" lane="112142482#3_0" startPos="15.87" endPos="28.87" friendlyPos="true" name="Feres Bet"/>
+    <busStop id="5.6" lane="112142482#3_0" startPos="460.05" endPos="473.05" friendlyPos="true" name="Bono Meskid"/>
+    <busStop id="5.7" lane="755224014_0" startPos="117.69" endPos="124.19" friendlyPos="true" name="Ayat Chefe Condominium"/>
+</additional>

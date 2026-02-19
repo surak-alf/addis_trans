@@ -1,0 +1,3 @@
+route_long_name,route_short_name,agency_id,route_id,route_type,route_desc,route_color,route_text_color
+Megenegna Terminal ↔ Legedadi Mission,AB097,AA,10400029,3,,1779c2,ffffff
+Megenegna Terminal ↔ Ayat Chefe Condominium,AB049,AA,10400405,3,,1779c2,ffffff

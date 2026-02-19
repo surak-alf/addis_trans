@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-16 15:43:49.128714 by Eclipse SUMO gtfs2pt.py v1_25_0+0000-ac6c5a6752d
+<configuration>
+    <gtfs value="data/filtered_gtfs.zip"/>
+    <date value="20240115"/>
+    <network value="sumo_files/addis.net.xml"/>
+    <route-output value="sumo_files/routes.rou.xml"/>
+    <additional-output value="sumo_files/stops.add.xml"/>
+    <center-stops value="True"/>
+    <radius value="120.0"/>
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <vType id="bus" vClass="bus"/>
+</additional>

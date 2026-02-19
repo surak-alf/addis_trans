@@ -1,0 +1,741 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-18T15:14:55.953685+03:00 by Eclipse SUMO sumo 1.25.0
+<sumoConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="../sumo_files/addis.net.xml"/>
+        <route-files value="../sumo_files/routes.rou.xml"/>
+        <additional-files value="../sumo_files/stops.add.xml,../sumo_files/vtypes.xml,../sumo_files/passengers.add.xml"/>
+    </input>
+
+    <output>
+        <fcd-output value="../sumo_files/../outputs/fcd_output.xml"/>
+        <tripinfo-output value="../sumo_files/../outputs/tripinfo.xml"/>
+    </output>
+
+    <time>
+        <begin value="21590"/>
+        <end value="30000"/>
+        <step-length value="1"/>
+    </time>
+
+    <processing>
+        <time-to-teleport value="-1"/>
+        <waiting-time-memory value="1000"/>
+    </processing>
+
+    <traci_server>
+        <remote-port value="57165"/>
+    </traci_server>
+
+</sumoConfiguration>
+-->
+
+<tripinfos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/tripinfo_file.xsd">
+    <tripinfo id="5.0" depart="21596.00" departLane="61605505#2_0" departPos="12.10" departSpeed="0.00" departDelay="6.00" arrival="22383.00" arrivalLane="755224014_0" arrivalPos="124.19" arrivalSpeed="0.97" duration="787.00" routeLength="10323.19" waitingTime="11.00" waitingCount="3" stopTime="50.00" timeLoss="110.26" rerouteNo="0" devices="tripinfo_5.0 fcd_5.0" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="4.0" depart="21590.00" departLane="754690751#0_0" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="22396.00" arrivalLane="200567867#0_0" arrivalPos="415.11" arrivalSpeed="7.64" duration="806.00" routeLength="8636.01" waitingTime="1.00" waitingCount="1" stopTime="80.00" timeLoss="103.27" rerouteNo="0" devices="tripinfo_4.0 fcd_4.0" vType="bus" speedFactor="1.00" vaporized=""/>
+    <personinfo id="flow_0.0" depart="21592.00" type="DEFAULT_PEDTYPE" speedFactor="0.98" duration="1319.00" waitingTime="2.00" timeLoss="194.01" traveltime="1307.00">
+        <stop duration="10.00" arrival="21602.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2.00" vehicle="0.0" depart="21604.00" arrival="22911.00" arrivalPos="140.13" duration="1307.00" routeLength="14521.59" timeLoss="194.01"/>
+    </personinfo>
+    <personinfo id="flow_0.1" depart="21593.00" type="DEFAULT_PEDTYPE" speedFactor="1.08" duration="1318.00" waitingTime="1.00" timeLoss="194.01" traveltime="1307.00">
+        <stop duration="10.00" arrival="21603.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="1.00" vehicle="0.0" depart="21604.00" arrival="22911.00" arrivalPos="140.13" duration="1307.00" routeLength="14521.59" timeLoss="194.01"/>
+    </personinfo>
+    <tripinfo id="0.0" depart="21590.00" departLane="26006215#0_0" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="22950.00" arrivalLane="558107787_0" arrivalPos="429.03" arrivalSpeed="13.55" duration="1360.00" routeLength="14811.37" waitingTime="5.00" waitingCount="5" stopTime="150.00" timeLoss="205.67" rerouteNo="0" devices="tripinfo_0.0 fcd_0.0 person_0.0" vType="bus" speedFactor="1.00" vaporized=""/>
+    <personinfo id="flow_1.0" depart="21591.00" type="DEFAULT_PEDTYPE" speedFactor="1.01" duration="1626.00" waitingTime="24.00" timeLoss="325.87" traveltime="1592.00">
+        <stop duration="10.00" arrival="21601.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="24.00" vehicle="1.0" depart="21625.00" arrival="23217.00" arrivalPos="12.95" duration="1592.00" routeLength="17598.23" timeLoss="325.87"/>
+    </personinfo>
+    <tripinfo id="1.0" depart="21590.00" departLane="61605505#2_0" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="23229.00" arrivalLane="754643297#0_0" arrivalPos="17.18" arrivalSpeed="2.43" duration="1639.00" routeLength="17765.22" waitingTime="6.00" waitingCount="6" stopTime="220.00" timeLoss="342.84" rerouteNo="0" devices="tripinfo_1.0 fcd_1.0 person_1.0" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="bus_0_22310" depart="22310.00" departLane="26006215#0_0" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="23656.00" arrivalLane="558107787_0" arrivalPos="429.03" arrivalSpeed="13.61" duration="1346.00" routeLength="14811.37" waitingTime="3.00" waitingCount="3" stopTime="140.00" timeLoss="201.68" rerouteNo="0" devices="tripinfo_bus_0_22310 fcd_bus_0_22310" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="bus_1_22790" depart="22790.00" departLane="61605505#2_0" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="24405.00" arrivalLane="754643297#0_0" arrivalPos="17.18" arrivalSpeed="2.46" duration="1615.00" routeLength="17765.22" waitingTime="6.00" waitingCount="5" stopTime="210.00" timeLoss="329.99" rerouteNo="0" devices="tripinfo_bus_1_22790 fcd_bus_1_22790" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="bus_0_23270" depart="23270.00" departLane="26006215#0_0" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="24614.00" arrivalLane="558107787_0" arrivalPos="429.03" arrivalSpeed="13.50" duration="1344.00" routeLength="14811.37" waitingTime="3.00" waitingCount="3" stopTime="140.00" timeLoss="199.65" rerouteNo="0" devices="tripinfo_bus_0_23270 fcd_bus_0_23270" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="bus_1_23750" depart="23750.00" departLane="61605505#2_0" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="25357.00" arrivalLane="754643297#0_0" arrivalPos="17.18" arrivalSpeed="2.19" duration="1607.00" routeLength="17765.22" waitingTime="3.00" waitingCount="3" stopTime="210.00" timeLoss="320.95" rerouteNo="0" devices="tripinfo_bus_1_23750 fcd_bus_1_23750" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="bus_0_24230" depart="24230.00" departLane="26006215#0_0" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="25576.00" arrivalLane="558107787_0" arrivalPos="429.03" arrivalSpeed="13.84" duration="1346.00" routeLength="14811.37" waitingTime="2.00" waitingCount="2" stopTime="140.00" timeLoss="202.08" rerouteNo="0" devices="tripinfo_bus_0_24230 fcd_bus_0_24230" vType="bus" speedFactor="1.00" vaporized=""/>
+    <personinfo id="flow_1.1" depart="21620.00" type="DEFAULT_PEDTYPE" speedFactor="0.88" duration="4803.00" waitingTime="3207.00" timeLoss="319.11" traveltime="1586.00">
+        <stop duration="10.00" arrival="21630.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3207.00" vehicle="bus_1_24770" depart="24837.00" arrival="26423.00" arrivalPos="13.00" duration="1586.00" routeLength="17598.28" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.2" depart="21631.00" type="DEFAULT_PEDTYPE" speedFactor="0.95" duration="4792.00" waitingTime="3196.00" timeLoss="319.11" traveltime="1586.00">
+        <stop duration="10.00" arrival="21641.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3196.00" vehicle="bus_1_24770" depart="24837.00" arrival="26423.00" arrivalPos="13.00" duration="1586.00" routeLength="17598.28" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.3" depart="21653.00" type="DEFAULT_PEDTYPE" speedFactor="0.93" duration="4770.00" waitingTime="3174.00" timeLoss="319.11" traveltime="1586.00">
+        <stop duration="10.00" arrival="21663.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3174.00" vehicle="bus_1_24770" depart="24837.00" arrival="26423.00" arrivalPos="13.00" duration="1586.00" routeLength="17598.28" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.4" depart="21667.00" type="DEFAULT_PEDTYPE" speedFactor="0.82" duration="4757.00" waitingTime="3160.00" timeLoss="319.11" traveltime="1587.00">
+        <stop duration="10.00" arrival="21677.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3160.00" vehicle="bus_1_24770" depart="24837.00" arrival="26424.00" arrivalPos="13.00" duration="1587.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.5" depart="21675.00" type="DEFAULT_PEDTYPE" speedFactor="0.98" duration="4749.00" waitingTime="3152.00" timeLoss="319.11" traveltime="1587.00">
+        <stop duration="10.00" arrival="21685.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3152.00" vehicle="bus_1_24770" depart="24837.00" arrival="26424.00" arrivalPos="13.00" duration="1587.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.6" depart="21688.00" type="DEFAULT_PEDTYPE" speedFactor="1.15" duration="4737.00" waitingTime="3139.00" timeLoss="319.11" traveltime="1588.00">
+        <stop duration="10.00" arrival="21698.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3139.00" vehicle="bus_1_24770" depart="24837.00" arrival="26425.00" arrivalPos="13.00" duration="1588.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.7" depart="21697.00" type="DEFAULT_PEDTYPE" speedFactor="1.31" duration="4728.00" waitingTime="3130.00" timeLoss="319.11" traveltime="1588.00">
+        <stop duration="10.00" arrival="21707.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3130.00" vehicle="bus_1_24770" depart="24837.00" arrival="26425.00" arrivalPos="13.00" duration="1588.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.8" depart="21705.00" type="DEFAULT_PEDTYPE" speedFactor="1.06" duration="4721.00" waitingTime="3122.00" timeLoss="319.11" traveltime="1589.00">
+        <stop duration="10.00" arrival="21715.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3122.00" vehicle="bus_1_24770" depart="24837.00" arrival="26426.00" arrivalPos="13.00" duration="1589.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.9" depart="21720.00" type="DEFAULT_PEDTYPE" speedFactor="0.84" duration="4706.00" waitingTime="3107.00" timeLoss="319.11" traveltime="1589.00">
+        <stop duration="10.00" arrival="21730.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3107.00" vehicle="bus_1_24770" depart="24837.00" arrival="26426.00" arrivalPos="13.00" duration="1589.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.10" depart="21724.00" type="DEFAULT_PEDTYPE" speedFactor="1.13" duration="4703.00" waitingTime="3103.00" timeLoss="319.11" traveltime="1590.00">
+        <stop duration="10.00" arrival="21734.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3103.00" vehicle="bus_1_24770" depart="24837.00" arrival="26427.00" arrivalPos="13.00" duration="1590.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.11" depart="21735.00" type="DEFAULT_PEDTYPE" speedFactor="1.21" duration="4692.00" waitingTime="3092.00" timeLoss="319.11" traveltime="1590.00">
+        <stop duration="10.00" arrival="21745.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3092.00" vehicle="bus_1_24770" depart="24837.00" arrival="26427.00" arrivalPos="13.00" duration="1590.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.12" depart="21737.00" type="DEFAULT_PEDTYPE" speedFactor="0.95" duration="4691.00" waitingTime="3090.00" timeLoss="319.11" traveltime="1591.00">
+        <stop duration="10.00" arrival="21747.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3090.00" vehicle="bus_1_24770" depart="24837.00" arrival="26428.00" arrivalPos="13.00" duration="1591.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.13" depart="21748.00" type="DEFAULT_PEDTYPE" speedFactor="1.01" duration="4680.00" waitingTime="3079.00" timeLoss="319.11" traveltime="1591.00">
+        <stop duration="10.00" arrival="21758.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3079.00" vehicle="bus_1_24770" depart="24837.00" arrival="26428.00" arrivalPos="13.00" duration="1591.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.14" depart="21769.00" type="DEFAULT_PEDTYPE" speedFactor="0.98" duration="4660.00" waitingTime="3058.00" timeLoss="319.11" traveltime="1592.00">
+        <stop duration="10.00" arrival="21779.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3058.00" vehicle="bus_1_24770" depart="24837.00" arrival="26429.00" arrivalPos="13.00" duration="1592.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.15" depart="21771.00" type="DEFAULT_PEDTYPE" speedFactor="0.88" duration="4658.00" waitingTime="3056.00" timeLoss="319.11" traveltime="1592.00">
+        <stop duration="10.00" arrival="21781.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3056.00" vehicle="bus_1_24770" depart="24837.00" arrival="26429.00" arrivalPos="13.00" duration="1592.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.16" depart="21775.00" type="DEFAULT_PEDTYPE" speedFactor="1.11" duration="4655.00" waitingTime="3052.00" timeLoss="319.11" traveltime="1593.00">
+        <stop duration="10.00" arrival="21785.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3052.00" vehicle="bus_1_24770" depart="24837.00" arrival="26430.00" arrivalPos="13.00" duration="1593.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.17" depart="21797.00" type="DEFAULT_PEDTYPE" speedFactor="1.16" duration="4633.00" waitingTime="3030.00" timeLoss="319.11" traveltime="1593.00">
+        <stop duration="10.00" arrival="21807.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3030.00" vehicle="bus_1_24770" depart="24837.00" arrival="26430.00" arrivalPos="13.00" duration="1593.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.18" depart="21801.00" type="DEFAULT_PEDTYPE" speedFactor="1.05" duration="4630.00" waitingTime="3026.00" timeLoss="319.11" traveltime="1594.00">
+        <stop duration="10.00" arrival="21811.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="3026.00" vehicle="bus_1_24770" depart="24837.00" arrival="26431.00" arrivalPos="13.00" duration="1594.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.19" depart="21843.00" type="DEFAULT_PEDTYPE" speedFactor="1.08" duration="4588.00" waitingTime="2984.00" timeLoss="319.11" traveltime="1594.00">
+        <stop duration="10.00" arrival="21853.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2984.00" vehicle="bus_1_24770" depart="24837.00" arrival="26431.00" arrivalPos="13.00" duration="1594.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.20" depart="21865.00" type="DEFAULT_PEDTYPE" speedFactor="1.06" duration="4567.00" waitingTime="2962.00" timeLoss="319.11" traveltime="1595.00">
+        <stop duration="10.00" arrival="21875.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2962.00" vehicle="bus_1_24770" depart="24837.00" arrival="26432.00" arrivalPos="13.00" duration="1595.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.21" depart="21876.00" type="DEFAULT_PEDTYPE" speedFactor="1.10" duration="4556.00" waitingTime="2951.00" timeLoss="319.11" traveltime="1595.00">
+        <stop duration="10.00" arrival="21886.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2951.00" vehicle="bus_1_24770" depart="24837.00" arrival="26432.00" arrivalPos="13.00" duration="1595.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.22" depart="21879.00" type="DEFAULT_PEDTYPE" speedFactor="1.04" duration="4554.00" waitingTime="2948.00" timeLoss="319.11" traveltime="1596.00">
+        <stop duration="10.00" arrival="21889.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2948.00" vehicle="bus_1_24770" depart="24837.00" arrival="26433.00" arrivalPos="13.00" duration="1596.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.23" depart="21883.00" type="DEFAULT_PEDTYPE" speedFactor="0.79" duration="4550.00" waitingTime="2944.00" timeLoss="319.11" traveltime="1596.00">
+        <stop duration="10.00" arrival="21893.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2944.00" vehicle="bus_1_24770" depart="24837.00" arrival="26433.00" arrivalPos="13.00" duration="1596.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.24" depart="21887.00" type="DEFAULT_PEDTYPE" speedFactor="1.02" duration="4547.00" waitingTime="2940.00" timeLoss="319.11" traveltime="1597.00">
+        <stop duration="10.00" arrival="21897.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2940.00" vehicle="bus_1_24770" depart="24837.00" arrival="26434.00" arrivalPos="13.00" duration="1597.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.25" depart="21891.00" type="DEFAULT_PEDTYPE" speedFactor="1.06" duration="4543.00" waitingTime="2936.00" timeLoss="319.11" traveltime="1597.00">
+        <stop duration="10.00" arrival="21901.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2936.00" vehicle="bus_1_24770" depart="24837.00" arrival="26434.00" arrivalPos="13.00" duration="1597.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.26" depart="21893.00" type="DEFAULT_PEDTYPE" speedFactor="1.01" duration="4542.00" waitingTime="2934.00" timeLoss="319.11" traveltime="1598.00">
+        <stop duration="10.00" arrival="21903.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2934.00" vehicle="bus_1_24770" depart="24837.00" arrival="26435.00" arrivalPos="13.00" duration="1598.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.27" depart="21909.00" type="DEFAULT_PEDTYPE" speedFactor="0.95" duration="4526.00" waitingTime="2918.00" timeLoss="319.11" traveltime="1598.00">
+        <stop duration="10.00" arrival="21919.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2918.00" vehicle="bus_1_24770" depart="24837.00" arrival="26435.00" arrivalPos="13.00" duration="1598.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.28" depart="21923.00" type="DEFAULT_PEDTYPE" speedFactor="1.06" duration="4513.00" waitingTime="2904.00" timeLoss="319.11" traveltime="1599.00">
+        <stop duration="10.00" arrival="21933.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2904.00" vehicle="bus_1_24770" depart="24837.00" arrival="26436.00" arrivalPos="13.00" duration="1599.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.29" depart="21929.00" type="DEFAULT_PEDTYPE" speedFactor="1.03" duration="4507.00" waitingTime="2898.00" timeLoss="319.11" traveltime="1599.00">
+        <stop duration="10.00" arrival="21939.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2898.00" vehicle="bus_1_24770" depart="24837.00" arrival="26436.00" arrivalPos="13.00" duration="1599.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.30" depart="21951.00" type="DEFAULT_PEDTYPE" speedFactor="1.07" duration="4486.00" waitingTime="2876.00" timeLoss="319.11" traveltime="1600.00">
+        <stop duration="10.00" arrival="21961.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2876.00" vehicle="bus_1_24770" depart="24837.00" arrival="26437.00" arrivalPos="13.00" duration="1600.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.31" depart="21979.00" type="DEFAULT_PEDTYPE" speedFactor="0.99" duration="4458.00" waitingTime="2848.00" timeLoss="319.11" traveltime="1600.00">
+        <stop duration="10.00" arrival="21989.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2848.00" vehicle="bus_1_24770" depart="24837.00" arrival="26437.00" arrivalPos="13.00" duration="1600.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.32" depart="21990.00" type="DEFAULT_PEDTYPE" speedFactor="0.98" duration="4448.00" waitingTime="2837.00" timeLoss="319.11" traveltime="1601.00">
+        <stop duration="10.00" arrival="22000.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2837.00" vehicle="bus_1_24770" depart="24837.00" arrival="26438.00" arrivalPos="13.00" duration="1601.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.33" depart="21993.00" type="DEFAULT_PEDTYPE" speedFactor="0.97" duration="4445.00" waitingTime="2834.00" timeLoss="319.11" traveltime="1601.00">
+        <stop duration="10.00" arrival="22003.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2834.00" vehicle="bus_1_24770" depart="24837.00" arrival="26438.00" arrivalPos="13.00" duration="1601.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.34" depart="22001.00" type="DEFAULT_PEDTYPE" speedFactor="1.25" duration="4438.00" waitingTime="2826.00" timeLoss="319.11" traveltime="1602.00">
+        <stop duration="10.00" arrival="22011.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2826.00" vehicle="bus_1_24770" depart="24837.00" arrival="26439.00" arrivalPos="13.00" duration="1602.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.35" depart="22007.00" type="DEFAULT_PEDTYPE" speedFactor="0.84" duration="4432.00" waitingTime="2820.00" timeLoss="319.11" traveltime="1602.00">
+        <stop duration="10.00" arrival="22017.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2820.00" vehicle="bus_1_24770" depart="24837.00" arrival="26439.00" arrivalPos="13.00" duration="1602.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.36" depart="22010.00" type="DEFAULT_PEDTYPE" speedFactor="1.03" duration="4430.00" waitingTime="2817.00" timeLoss="319.11" traveltime="1603.00">
+        <stop duration="10.00" arrival="22020.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2817.00" vehicle="bus_1_24770" depart="24837.00" arrival="26440.00" arrivalPos="13.00" duration="1603.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.37" depart="22014.00" type="DEFAULT_PEDTYPE" speedFactor="0.99" duration="4426.00" waitingTime="2813.00" timeLoss="319.11" traveltime="1603.00">
+        <stop duration="10.00" arrival="22024.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2813.00" vehicle="bus_1_24770" depart="24837.00" arrival="26440.00" arrivalPos="13.00" duration="1603.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.38" depart="22035.00" type="DEFAULT_PEDTYPE" speedFactor="1.00" duration="4406.00" waitingTime="2792.00" timeLoss="319.11" traveltime="1604.00">
+        <stop duration="10.00" arrival="22045.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2792.00" vehicle="bus_1_24770" depart="24837.00" arrival="26441.00" arrivalPos="13.00" duration="1604.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.39" depart="22055.00" type="DEFAULT_PEDTYPE" speedFactor="0.80" duration="4386.00" waitingTime="2772.00" timeLoss="319.11" traveltime="1604.00">
+        <stop duration="10.00" arrival="22065.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2772.00" vehicle="bus_1_24770" depart="24837.00" arrival="26441.00" arrivalPos="13.00" duration="1604.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.40" depart="22067.00" type="DEFAULT_PEDTYPE" speedFactor="0.95" duration="4375.00" waitingTime="2760.00" timeLoss="319.11" traveltime="1605.00">
+        <stop duration="10.00" arrival="22077.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2760.00" vehicle="bus_1_24770" depart="24837.00" arrival="26442.00" arrivalPos="13.00" duration="1605.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.41" depart="22072.00" type="DEFAULT_PEDTYPE" speedFactor="0.86" duration="4370.00" waitingTime="2755.00" timeLoss="319.11" traveltime="1605.00">
+        <stop duration="10.00" arrival="22082.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2755.00" vehicle="bus_1_24770" depart="24837.00" arrival="26442.00" arrivalPos="13.00" duration="1605.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.42" depart="22073.00" type="DEFAULT_PEDTYPE" speedFactor="1.07" duration="4370.00" waitingTime="2754.00" timeLoss="319.11" traveltime="1606.00">
+        <stop duration="10.00" arrival="22083.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2754.00" vehicle="bus_1_24770" depart="24837.00" arrival="26443.00" arrivalPos="13.00" duration="1606.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.43" depart="22074.00" type="DEFAULT_PEDTYPE" speedFactor="1.11" duration="4369.00" waitingTime="2753.00" timeLoss="319.11" traveltime="1606.00">
+        <stop duration="10.00" arrival="22084.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2753.00" vehicle="bus_1_24770" depart="24837.00" arrival="26443.00" arrivalPos="13.00" duration="1606.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.44" depart="22083.00" type="DEFAULT_PEDTYPE" speedFactor="0.85" duration="4361.00" waitingTime="2744.00" timeLoss="319.11" traveltime="1607.00">
+        <stop duration="10.00" arrival="22093.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2744.00" vehicle="bus_1_24770" depart="24837.00" arrival="26444.00" arrivalPos="13.00" duration="1607.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.45" depart="22085.00" type="DEFAULT_PEDTYPE" speedFactor="1.06" duration="4359.00" waitingTime="2742.00" timeLoss="319.11" traveltime="1607.00">
+        <stop duration="10.00" arrival="22095.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2742.00" vehicle="bus_1_24770" depart="24837.00" arrival="26444.00" arrivalPos="13.00" duration="1607.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.46" depart="22104.00" type="DEFAULT_PEDTYPE" speedFactor="0.87" duration="4341.00" waitingTime="2723.00" timeLoss="319.11" traveltime="1608.00">
+        <stop duration="10.00" arrival="22114.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2723.00" vehicle="bus_1_24770" depart="24837.00" arrival="26445.00" arrivalPos="13.00" duration="1608.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.47" depart="22105.00" type="DEFAULT_PEDTYPE" speedFactor="1.19" duration="4340.00" waitingTime="2722.00" timeLoss="319.11" traveltime="1608.00">
+        <stop duration="10.00" arrival="22115.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2722.00" vehicle="bus_1_24770" depart="24837.00" arrival="26445.00" arrivalPos="13.00" duration="1608.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.48" depart="22116.00" type="DEFAULT_PEDTYPE" speedFactor="1.03" duration="4330.00" waitingTime="2711.00" timeLoss="319.11" traveltime="1609.00">
+        <stop duration="10.00" arrival="22126.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2711.00" vehicle="bus_1_24770" depart="24837.00" arrival="26446.00" arrivalPos="13.00" duration="1609.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.49" depart="22161.00" type="DEFAULT_PEDTYPE" speedFactor="0.84" duration="4285.00" waitingTime="2666.00" timeLoss="319.11" traveltime="1609.00">
+        <stop duration="10.00" arrival="22171.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2666.00" vehicle="bus_1_24770" depart="24837.00" arrival="26446.00" arrivalPos="13.00" duration="1609.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.50" depart="22167.00" type="DEFAULT_PEDTYPE" speedFactor="1.00" duration="4280.00" waitingTime="2660.00" timeLoss="319.11" traveltime="1610.00">
+        <stop duration="10.00" arrival="22177.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2660.00" vehicle="bus_1_24770" depart="24837.00" arrival="26447.00" arrivalPos="13.00" duration="1610.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.51" depart="22169.00" type="DEFAULT_PEDTYPE" speedFactor="1.00" duration="4278.00" waitingTime="2658.00" timeLoss="319.11" traveltime="1610.00">
+        <stop duration="10.00" arrival="22179.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2658.00" vehicle="bus_1_24770" depart="24837.00" arrival="26447.00" arrivalPos="13.00" duration="1610.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.52" depart="22197.00" type="DEFAULT_PEDTYPE" speedFactor="1.05" duration="4251.00" waitingTime="2630.00" timeLoss="319.11" traveltime="1611.00">
+        <stop duration="10.00" arrival="22207.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2630.00" vehicle="bus_1_24770" depart="24837.00" arrival="26448.00" arrivalPos="13.00" duration="1611.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.53" depart="22207.00" type="DEFAULT_PEDTYPE" speedFactor="1.11" duration="4241.00" waitingTime="2620.00" timeLoss="319.11" traveltime="1611.00">
+        <stop duration="10.00" arrival="22217.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2620.00" vehicle="bus_1_24770" depart="24837.00" arrival="26448.00" arrivalPos="13.00" duration="1611.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.54" depart="22217.00" type="DEFAULT_PEDTYPE" speedFactor="1.11" duration="4232.00" waitingTime="2610.00" timeLoss="319.11" traveltime="1612.00">
+        <stop duration="10.00" arrival="22227.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2610.00" vehicle="bus_1_24770" depart="24837.00" arrival="26449.00" arrivalPos="13.00" duration="1612.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.55" depart="22223.00" type="DEFAULT_PEDTYPE" speedFactor="0.95" duration="4226.00" waitingTime="2604.00" timeLoss="319.11" traveltime="1612.00">
+        <stop duration="10.00" arrival="22233.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2604.00" vehicle="bus_1_24770" depart="24837.00" arrival="26449.00" arrivalPos="13.00" duration="1612.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.56" depart="22235.00" type="DEFAULT_PEDTYPE" speedFactor="1.07" duration="4215.00" waitingTime="2592.00" timeLoss="319.11" traveltime="1613.00">
+        <stop duration="10.00" arrival="22245.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2592.00" vehicle="bus_1_24770" depart="24837.00" arrival="26450.00" arrivalPos="13.00" duration="1613.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.57" depart="22240.00" type="DEFAULT_PEDTYPE" speedFactor="1.14" duration="4210.00" waitingTime="2587.00" timeLoss="319.11" traveltime="1613.00">
+        <stop duration="10.00" arrival="22250.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2587.00" vehicle="bus_1_24770" depart="24837.00" arrival="26450.00" arrivalPos="13.00" duration="1613.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.58" depart="22260.00" type="DEFAULT_PEDTYPE" speedFactor="1.05" duration="4191.00" waitingTime="2567.00" timeLoss="319.11" traveltime="1614.00">
+        <stop duration="10.00" arrival="22270.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2567.00" vehicle="bus_1_24770" depart="24837.00" arrival="26451.00" arrivalPos="13.00" duration="1614.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.59" depart="22285.00" type="DEFAULT_PEDTYPE" speedFactor="0.94" duration="4166.00" waitingTime="2542.00" timeLoss="319.11" traveltime="1614.00">
+        <stop duration="10.00" arrival="22295.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2542.00" vehicle="bus_1_24770" depart="24837.00" arrival="26451.00" arrivalPos="13.00" duration="1614.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.60" depart="22287.00" type="DEFAULT_PEDTYPE" speedFactor="1.06" duration="4165.00" waitingTime="2540.00" timeLoss="319.11" traveltime="1615.00">
+        <stop duration="10.00" arrival="22297.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2540.00" vehicle="bus_1_24770" depart="24837.00" arrival="26452.00" arrivalPos="13.00" duration="1615.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.61" depart="22289.00" type="DEFAULT_PEDTYPE" speedFactor="0.91" duration="4163.00" waitingTime="2538.00" timeLoss="319.11" traveltime="1615.00">
+        <stop duration="10.00" arrival="22299.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2538.00" vehicle="bus_1_24770" depart="24837.00" arrival="26452.00" arrivalPos="13.00" duration="1615.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.62" depart="22295.00" type="DEFAULT_PEDTYPE" speedFactor="1.04" duration="4158.00" waitingTime="2532.00" timeLoss="319.11" traveltime="1616.00">
+        <stop duration="10.00" arrival="22305.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2532.00" vehicle="bus_1_24770" depart="24837.00" arrival="26453.00" arrivalPos="13.00" duration="1616.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.63" depart="22302.00" type="DEFAULT_PEDTYPE" speedFactor="0.97" duration="4151.00" waitingTime="2525.00" timeLoss="319.11" traveltime="1616.00">
+        <stop duration="10.00" arrival="22312.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2525.00" vehicle="bus_1_24770" depart="24837.00" arrival="26453.00" arrivalPos="13.00" duration="1616.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.64" depart="22303.00" type="DEFAULT_PEDTYPE" speedFactor="0.92" duration="4151.00" waitingTime="2524.00" timeLoss="319.11" traveltime="1617.00">
+        <stop duration="10.00" arrival="22313.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2524.00" vehicle="bus_1_24770" depart="24837.00" arrival="26454.00" arrivalPos="13.00" duration="1617.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.65" depart="22318.00" type="DEFAULT_PEDTYPE" speedFactor="0.89" duration="4136.00" waitingTime="2509.00" timeLoss="319.11" traveltime="1617.00">
+        <stop duration="10.00" arrival="22328.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2509.00" vehicle="bus_1_24770" depart="24837.00" arrival="26454.00" arrivalPos="13.00" duration="1617.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.66" depart="22332.00" type="DEFAULT_PEDTYPE" speedFactor="1.07" duration="4123.00" waitingTime="2495.00" timeLoss="319.11" traveltime="1618.00">
+        <stop duration="10.00" arrival="22342.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2495.00" vehicle="bus_1_24770" depart="24837.00" arrival="26455.00" arrivalPos="13.00" duration="1618.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.67" depart="22340.00" type="DEFAULT_PEDTYPE" speedFactor="0.98" duration="4115.00" waitingTime="2487.00" timeLoss="319.11" traveltime="1618.00">
+        <stop duration="10.00" arrival="22350.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2487.00" vehicle="bus_1_24770" depart="24837.00" arrival="26455.00" arrivalPos="13.00" duration="1618.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.68" depart="22344.00" type="DEFAULT_PEDTYPE" speedFactor="1.02" duration="4112.00" waitingTime="2483.00" timeLoss="319.11" traveltime="1619.00">
+        <stop duration="10.00" arrival="22354.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2483.00" vehicle="bus_1_24770" depart="24837.00" arrival="26456.00" arrivalPos="13.00" duration="1619.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.69" depart="22368.00" type="DEFAULT_PEDTYPE" speedFactor="1.02" duration="4088.00" waitingTime="2459.00" timeLoss="319.11" traveltime="1619.00">
+        <stop duration="10.00" arrival="22378.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2459.00" vehicle="bus_1_24770" depart="24837.00" arrival="26456.00" arrivalPos="13.00" duration="1619.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.70" depart="22379.00" type="DEFAULT_PEDTYPE" speedFactor="1.04" duration="4078.00" waitingTime="2448.00" timeLoss="319.11" traveltime="1620.00">
+        <stop duration="10.00" arrival="22389.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2448.00" vehicle="bus_1_24770" depart="24837.00" arrival="26457.00" arrivalPos="13.00" duration="1620.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.71" depart="22383.00" type="DEFAULT_PEDTYPE" speedFactor="0.94" duration="4074.00" waitingTime="2444.00" timeLoss="319.11" traveltime="1620.00">
+        <stop duration="10.00" arrival="22393.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2444.00" vehicle="bus_1_24770" depart="24837.00" arrival="26457.00" arrivalPos="13.00" duration="1620.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.72" depart="22405.00" type="DEFAULT_PEDTYPE" speedFactor="0.98" duration="4053.00" waitingTime="2422.00" timeLoss="319.11" traveltime="1621.00">
+        <stop duration="10.00" arrival="22415.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2422.00" vehicle="bus_1_24770" depart="24837.00" arrival="26458.00" arrivalPos="13.00" duration="1621.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.73" depart="22423.00" type="DEFAULT_PEDTYPE" speedFactor="1.14" duration="4035.00" waitingTime="2404.00" timeLoss="319.11" traveltime="1621.00">
+        <stop duration="10.00" arrival="22433.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2404.00" vehicle="bus_1_24770" depart="24837.00" arrival="26458.00" arrivalPos="13.00" duration="1621.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.74" depart="22453.00" type="DEFAULT_PEDTYPE" speedFactor="0.94" duration="4006.00" waitingTime="2374.00" timeLoss="319.11" traveltime="1622.00">
+        <stop duration="10.00" arrival="22463.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2374.00" vehicle="bus_1_24770" depart="24837.00" arrival="26459.00" arrivalPos="13.00" duration="1622.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.75" depart="22465.00" type="DEFAULT_PEDTYPE" speedFactor="0.75" duration="3994.00" waitingTime="2362.00" timeLoss="319.11" traveltime="1622.00">
+        <stop duration="10.00" arrival="22475.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2362.00" vehicle="bus_1_24770" depart="24837.00" arrival="26459.00" arrivalPos="13.00" duration="1622.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.76" depart="22467.00" type="DEFAULT_PEDTYPE" speedFactor="0.94" duration="3993.00" waitingTime="2360.00" timeLoss="319.11" traveltime="1623.00">
+        <stop duration="10.00" arrival="22477.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2360.00" vehicle="bus_1_24770" depart="24837.00" arrival="26460.00" arrivalPos="13.00" duration="1623.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.77" depart="22470.00" type="DEFAULT_PEDTYPE" speedFactor="1.05" duration="3990.00" waitingTime="2357.00" timeLoss="319.11" traveltime="1623.00">
+        <stop duration="10.00" arrival="22480.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2357.00" vehicle="bus_1_24770" depart="24837.00" arrival="26460.00" arrivalPos="13.00" duration="1623.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.78" depart="22491.00" type="DEFAULT_PEDTYPE" speedFactor="1.00" duration="3970.00" waitingTime="2336.00" timeLoss="319.11" traveltime="1624.00">
+        <stop duration="10.00" arrival="22501.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2336.00" vehicle="bus_1_24770" depart="24837.00" arrival="26461.00" arrivalPos="13.00" duration="1624.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.79" depart="22511.00" type="DEFAULT_PEDTYPE" speedFactor="1.17" duration="3950.00" waitingTime="2316.00" timeLoss="319.11" traveltime="1624.00">
+        <stop duration="10.00" arrival="22521.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2316.00" vehicle="bus_1_24770" depart="24837.00" arrival="26461.00" arrivalPos="13.00" duration="1624.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.80" depart="22513.00" type="DEFAULT_PEDTYPE" speedFactor="1.17" duration="3949.00" waitingTime="2314.00" timeLoss="319.11" traveltime="1625.00">
+        <stop duration="10.00" arrival="22523.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2314.00" vehicle="bus_1_24770" depart="24837.00" arrival="26462.00" arrivalPos="13.00" duration="1625.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.81" depart="22535.00" type="DEFAULT_PEDTYPE" speedFactor="1.03" duration="3927.00" waitingTime="2292.00" timeLoss="319.11" traveltime="1625.00">
+        <stop duration="10.00" arrival="22545.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2292.00" vehicle="bus_1_24770" depart="24837.00" arrival="26462.00" arrivalPos="13.00" duration="1625.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.82" depart="22539.00" type="DEFAULT_PEDTYPE" speedFactor="0.98" duration="3924.00" waitingTime="2288.00" timeLoss="319.11" traveltime="1626.00">
+        <stop duration="10.00" arrival="22549.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2288.00" vehicle="bus_1_24770" depart="24837.00" arrival="26463.00" arrivalPos="13.00" duration="1626.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.83" depart="22552.00" type="DEFAULT_PEDTYPE" speedFactor="0.91" duration="3911.00" waitingTime="2275.00" timeLoss="319.11" traveltime="1626.00">
+        <stop duration="10.00" arrival="22562.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2275.00" vehicle="bus_1_24770" depart="24837.00" arrival="26463.00" arrivalPos="13.00" duration="1626.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.84" depart="22554.00" type="DEFAULT_PEDTYPE" speedFactor="1.09" duration="3910.00" waitingTime="2273.00" timeLoss="319.11" traveltime="1627.00">
+        <stop duration="10.00" arrival="22564.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2273.00" vehicle="bus_1_24770" depart="24837.00" arrival="26464.00" arrivalPos="13.00" duration="1627.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <personinfo id="flow_1.85" depart="22567.00" type="DEFAULT_PEDTYPE" speedFactor="0.81" duration="3897.00" waitingTime="2260.00" timeLoss="319.11" traveltime="1627.00">
+        <stop duration="10.00" arrival="22577.00" arrivalPos="169.24" actType="waiting"/>
+        <ride waitingTime="2260.00" vehicle="bus_1_24770" depart="24837.00" arrival="26464.00" arrivalPos="13.00" duration="1627.00" routeLength="17598.26" timeLoss="319.11"/>
+    </personinfo>
+    <tripinfo id="bus_1_24770" depart="24770.00" departLane="61605505#2_0" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="26468.00" arrivalLane="754643297#0_0" arrivalPos="17.18" arrivalSpeed="2.17" duration="1698.00" routeLength="17765.22" waitingTime="5.00" waitingCount="5" stopTime="286.00" timeLoss="335.10" rerouteNo="0" devices="tripinfo_bus_1_24770 fcd_bus_1_24770 person_bus_1_24770" vType="bus" speedFactor="1.00" vaporized=""/>
+    <personinfo id="flow_0.2" depart="21596.00" type="DEFAULT_PEDTYPE" speedFactor="1.20" duration="4902.00" waitingTime="3586.00" timeLoss="192.91" traveltime="1306.00">
+        <stop duration="10.00" arrival="21606.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3586.00" vehicle="bus_0_25130" depart="25192.00" arrival="26498.00" arrivalPos="140.15" duration="1306.00" routeLength="14521.67" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.3" depart="21600.00" type="DEFAULT_PEDTYPE" speedFactor="1.08" duration="4898.00" waitingTime="3582.00" timeLoss="192.91" traveltime="1306.00">
+        <stop duration="10.00" arrival="21610.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3582.00" vehicle="bus_0_25130" depart="25192.00" arrival="26498.00" arrivalPos="140.15" duration="1306.00" routeLength="14521.67" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.4" depart="21602.00" type="DEFAULT_PEDTYPE" speedFactor="1.01" duration="4896.00" waitingTime="3580.00" timeLoss="192.91" traveltime="1306.00">
+        <stop duration="10.00" arrival="21612.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3580.00" vehicle="bus_0_25130" depart="25192.00" arrival="26498.00" arrivalPos="140.15" duration="1306.00" routeLength="14521.67" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.5" depart="21610.00" type="DEFAULT_PEDTYPE" speedFactor="0.92" duration="4889.00" waitingTime="3572.00" timeLoss="192.91" traveltime="1307.00">
+        <stop duration="10.00" arrival="21620.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3572.00" vehicle="bus_0_25130" depart="25192.00" arrival="26499.00" arrivalPos="140.15" duration="1307.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.6" depart="21613.00" type="DEFAULT_PEDTYPE" speedFactor="1.12" duration="4886.00" waitingTime="3569.00" timeLoss="192.91" traveltime="1307.00">
+        <stop duration="10.00" arrival="21623.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3569.00" vehicle="bus_0_25130" depart="25192.00" arrival="26499.00" arrivalPos="140.15" duration="1307.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.7" depart="21624.00" type="DEFAULT_PEDTYPE" speedFactor="1.10" duration="4876.00" waitingTime="3558.00" timeLoss="192.91" traveltime="1308.00">
+        <stop duration="10.00" arrival="21634.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3558.00" vehicle="bus_0_25130" depart="25192.00" arrival="26500.00" arrivalPos="140.15" duration="1308.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.8" depart="21637.00" type="DEFAULT_PEDTYPE" speedFactor="0.83" duration="4863.00" waitingTime="3545.00" timeLoss="192.91" traveltime="1308.00">
+        <stop duration="10.00" arrival="21647.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3545.00" vehicle="bus_0_25130" depart="25192.00" arrival="26500.00" arrivalPos="140.15" duration="1308.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.9" depart="21639.00" type="DEFAULT_PEDTYPE" speedFactor="0.87" duration="4862.00" waitingTime="3543.00" timeLoss="192.91" traveltime="1309.00">
+        <stop duration="10.00" arrival="21649.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3543.00" vehicle="bus_0_25130" depart="25192.00" arrival="26501.00" arrivalPos="140.15" duration="1309.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.10" depart="21640.00" type="DEFAULT_PEDTYPE" speedFactor="1.03" duration="4861.00" waitingTime="3542.00" timeLoss="192.91" traveltime="1309.00">
+        <stop duration="10.00" arrival="21650.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3542.00" vehicle="bus_0_25130" depart="25192.00" arrival="26501.00" arrivalPos="140.15" duration="1309.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.11" depart="21642.00" type="DEFAULT_PEDTYPE" speedFactor="0.96" duration="4860.00" waitingTime="3540.00" timeLoss="192.91" traveltime="1310.00">
+        <stop duration="10.00" arrival="21652.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3540.00" vehicle="bus_0_25130" depart="25192.00" arrival="26502.00" arrivalPos="140.15" duration="1310.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.12" depart="21656.00" type="DEFAULT_PEDTYPE" speedFactor="0.97" duration="4846.00" waitingTime="3526.00" timeLoss="192.91" traveltime="1310.00">
+        <stop duration="10.00" arrival="21666.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3526.00" vehicle="bus_0_25130" depart="25192.00" arrival="26502.00" arrivalPos="140.15" duration="1310.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.13" depart="21683.00" type="DEFAULT_PEDTYPE" speedFactor="0.90" duration="4820.00" waitingTime="3499.00" timeLoss="192.91" traveltime="1311.00">
+        <stop duration="10.00" arrival="21693.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3499.00" vehicle="bus_0_25130" depart="25192.00" arrival="26503.00" arrivalPos="140.15" duration="1311.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.14" depart="21703.00" type="DEFAULT_PEDTYPE" speedFactor="1.00" duration="4800.00" waitingTime="3479.00" timeLoss="192.91" traveltime="1311.00">
+        <stop duration="10.00" arrival="21713.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3479.00" vehicle="bus_0_25130" depart="25192.00" arrival="26503.00" arrivalPos="140.15" duration="1311.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.15" depart="21709.00" type="DEFAULT_PEDTYPE" speedFactor="1.02" duration="4795.00" waitingTime="3473.00" timeLoss="192.91" traveltime="1312.00">
+        <stop duration="10.00" arrival="21719.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3473.00" vehicle="bus_0_25130" depart="25192.00" arrival="26504.00" arrivalPos="140.15" duration="1312.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.16" depart="21710.00" type="DEFAULT_PEDTYPE" speedFactor="1.00" duration="4794.00" waitingTime="3472.00" timeLoss="192.91" traveltime="1312.00">
+        <stop duration="10.00" arrival="21720.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3472.00" vehicle="bus_0_25130" depart="25192.00" arrival="26504.00" arrivalPos="140.15" duration="1312.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.17" depart="21736.00" type="DEFAULT_PEDTYPE" speedFactor="0.93" duration="4769.00" waitingTime="3446.00" timeLoss="192.91" traveltime="1313.00">
+        <stop duration="10.00" arrival="21746.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3446.00" vehicle="bus_0_25130" depart="25192.00" arrival="26505.00" arrivalPos="140.15" duration="1313.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.18" depart="21751.00" type="DEFAULT_PEDTYPE" speedFactor="1.01" duration="4754.00" waitingTime="3431.00" timeLoss="192.91" traveltime="1313.00">
+        <stop duration="10.00" arrival="21761.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3431.00" vehicle="bus_0_25130" depart="25192.00" arrival="26505.00" arrivalPos="140.15" duration="1313.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.19" depart="21757.00" type="DEFAULT_PEDTYPE" speedFactor="1.02" duration="4749.00" waitingTime="3425.00" timeLoss="192.91" traveltime="1314.00">
+        <stop duration="10.00" arrival="21767.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3425.00" vehicle="bus_0_25130" depart="25192.00" arrival="26506.00" arrivalPos="140.15" duration="1314.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.20" depart="21767.00" type="DEFAULT_PEDTYPE" speedFactor="1.04" duration="4739.00" waitingTime="3415.00" timeLoss="192.91" traveltime="1314.00">
+        <stop duration="10.00" arrival="21777.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3415.00" vehicle="bus_0_25130" depart="25192.00" arrival="26506.00" arrivalPos="140.15" duration="1314.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.21" depart="21784.00" type="DEFAULT_PEDTYPE" speedFactor="0.86" duration="4723.00" waitingTime="3398.00" timeLoss="192.91" traveltime="1315.00">
+        <stop duration="10.00" arrival="21794.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3398.00" vehicle="bus_0_25130" depart="25192.00" arrival="26507.00" arrivalPos="140.15" duration="1315.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.22" depart="21785.00" type="DEFAULT_PEDTYPE" speedFactor="0.91" duration="4722.00" waitingTime="3397.00" timeLoss="192.91" traveltime="1315.00">
+        <stop duration="10.00" arrival="21795.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3397.00" vehicle="bus_0_25130" depart="25192.00" arrival="26507.00" arrivalPos="140.15" duration="1315.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.23" depart="21786.00" type="DEFAULT_PEDTYPE" speedFactor="1.14" duration="4722.00" waitingTime="3396.00" timeLoss="192.91" traveltime="1316.00">
+        <stop duration="10.00" arrival="21796.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3396.00" vehicle="bus_0_25130" depart="25192.00" arrival="26508.00" arrivalPos="140.15" duration="1316.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.24" depart="21805.00" type="DEFAULT_PEDTYPE" speedFactor="1.03" duration="4703.00" waitingTime="3377.00" timeLoss="192.91" traveltime="1316.00">
+        <stop duration="10.00" arrival="21815.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3377.00" vehicle="bus_0_25130" depart="25192.00" arrival="26508.00" arrivalPos="140.15" duration="1316.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.25" depart="21806.00" type="DEFAULT_PEDTYPE" speedFactor="0.98" duration="4703.00" waitingTime="3376.00" timeLoss="192.91" traveltime="1317.00">
+        <stop duration="10.00" arrival="21816.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3376.00" vehicle="bus_0_25130" depart="25192.00" arrival="26509.00" arrivalPos="140.15" duration="1317.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.26" depart="21810.00" type="DEFAULT_PEDTYPE" speedFactor="1.25" duration="4699.00" waitingTime="3372.00" timeLoss="192.91" traveltime="1317.00">
+        <stop duration="10.00" arrival="21820.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3372.00" vehicle="bus_0_25130" depart="25192.00" arrival="26509.00" arrivalPos="140.15" duration="1317.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.27" depart="21831.00" type="DEFAULT_PEDTYPE" speedFactor="0.99" duration="4679.00" waitingTime="3351.00" timeLoss="192.91" traveltime="1318.00">
+        <stop duration="10.00" arrival="21841.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3351.00" vehicle="bus_0_25130" depart="25192.00" arrival="26510.00" arrivalPos="140.15" duration="1318.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.28" depart="21834.00" type="DEFAULT_PEDTYPE" speedFactor="1.09" duration="4676.00" waitingTime="3348.00" timeLoss="192.91" traveltime="1318.00">
+        <stop duration="10.00" arrival="21844.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3348.00" vehicle="bus_0_25130" depart="25192.00" arrival="26510.00" arrivalPos="140.15" duration="1318.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.29" depart="21835.00" type="DEFAULT_PEDTYPE" speedFactor="0.94" duration="4676.00" waitingTime="3347.00" timeLoss="192.91" traveltime="1319.00">
+        <stop duration="10.00" arrival="21845.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3347.00" vehicle="bus_0_25130" depart="25192.00" arrival="26511.00" arrivalPos="140.15" duration="1319.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.30" depart="21851.00" type="DEFAULT_PEDTYPE" speedFactor="1.12" duration="4660.00" waitingTime="3331.00" timeLoss="192.91" traveltime="1319.00">
+        <stop duration="10.00" arrival="21861.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3331.00" vehicle="bus_0_25130" depart="25192.00" arrival="26511.00" arrivalPos="140.15" duration="1319.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.31" depart="21854.00" type="DEFAULT_PEDTYPE" speedFactor="1.10" duration="4658.00" waitingTime="3328.00" timeLoss="192.91" traveltime="1320.00">
+        <stop duration="10.00" arrival="21864.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3328.00" vehicle="bus_0_25130" depart="25192.00" arrival="26512.00" arrivalPos="140.15" duration="1320.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.32" depart="21871.00" type="DEFAULT_PEDTYPE" speedFactor="1.01" duration="4641.00" waitingTime="3311.00" timeLoss="192.91" traveltime="1320.00">
+        <stop duration="10.00" arrival="21881.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3311.00" vehicle="bus_0_25130" depart="25192.00" arrival="26512.00" arrivalPos="140.15" duration="1320.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.33" depart="21877.00" type="DEFAULT_PEDTYPE" speedFactor="0.95" duration="4636.00" waitingTime="3305.00" timeLoss="192.91" traveltime="1321.00">
+        <stop duration="10.00" arrival="21887.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3305.00" vehicle="bus_0_25130" depart="25192.00" arrival="26513.00" arrivalPos="140.15" duration="1321.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.34" depart="21879.00" type="DEFAULT_PEDTYPE" speedFactor="1.11" duration="4634.00" waitingTime="3303.00" timeLoss="192.91" traveltime="1321.00">
+        <stop duration="10.00" arrival="21889.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3303.00" vehicle="bus_0_25130" depart="25192.00" arrival="26513.00" arrivalPos="140.15" duration="1321.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.35" depart="21894.00" type="DEFAULT_PEDTYPE" speedFactor="0.97" duration="4620.00" waitingTime="3288.00" timeLoss="192.91" traveltime="1322.00">
+        <stop duration="10.00" arrival="21904.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3288.00" vehicle="bus_0_25130" depart="25192.00" arrival="26514.00" arrivalPos="140.15" duration="1322.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.36" depart="21900.00" type="DEFAULT_PEDTYPE" speedFactor="0.94" duration="4614.00" waitingTime="3282.00" timeLoss="192.91" traveltime="1322.00">
+        <stop duration="10.00" arrival="21910.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3282.00" vehicle="bus_0_25130" depart="25192.00" arrival="26514.00" arrivalPos="140.15" duration="1322.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.37" depart="21919.00" type="DEFAULT_PEDTYPE" speedFactor="0.91" duration="4596.00" waitingTime="3263.00" timeLoss="192.91" traveltime="1323.00">
+        <stop duration="10.00" arrival="21929.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3263.00" vehicle="bus_0_25130" depart="25192.00" arrival="26515.00" arrivalPos="140.15" duration="1323.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.38" depart="21940.00" type="DEFAULT_PEDTYPE" speedFactor="1.13" duration="4575.00" waitingTime="3242.00" timeLoss="192.91" traveltime="1323.00">
+        <stop duration="10.00" arrival="21950.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3242.00" vehicle="bus_0_25130" depart="25192.00" arrival="26515.00" arrivalPos="140.15" duration="1323.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.39" depart="21957.00" type="DEFAULT_PEDTYPE" speedFactor="0.92" duration="4559.00" waitingTime="3225.00" timeLoss="192.91" traveltime="1324.00">
+        <stop duration="10.00" arrival="21967.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3225.00" vehicle="bus_0_25130" depart="25192.00" arrival="26516.00" arrivalPos="140.15" duration="1324.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.40" depart="21963.00" type="DEFAULT_PEDTYPE" speedFactor="1.03" duration="4553.00" waitingTime="3219.00" timeLoss="192.91" traveltime="1324.00">
+        <stop duration="10.00" arrival="21973.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3219.00" vehicle="bus_0_25130" depart="25192.00" arrival="26516.00" arrivalPos="140.15" duration="1324.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.41" depart="21969.00" type="DEFAULT_PEDTYPE" speedFactor="1.06" duration="4548.00" waitingTime="3213.00" timeLoss="192.91" traveltime="1325.00">
+        <stop duration="10.00" arrival="21979.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3213.00" vehicle="bus_0_25130" depart="25192.00" arrival="26517.00" arrivalPos="140.15" duration="1325.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.42" depart="21980.00" type="DEFAULT_PEDTYPE" speedFactor="0.93" duration="4537.00" waitingTime="3202.00" timeLoss="192.91" traveltime="1325.00">
+        <stop duration="10.00" arrival="21990.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3202.00" vehicle="bus_0_25130" depart="25192.00" arrival="26517.00" arrivalPos="140.15" duration="1325.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.43" depart="21992.00" type="DEFAULT_PEDTYPE" speedFactor="1.18" duration="4526.00" waitingTime="3190.00" timeLoss="192.91" traveltime="1326.00">
+        <stop duration="10.00" arrival="22002.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3190.00" vehicle="bus_0_25130" depart="25192.00" arrival="26518.00" arrivalPos="140.15" duration="1326.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.44" depart="22019.00" type="DEFAULT_PEDTYPE" speedFactor="0.83" duration="4499.00" waitingTime="3163.00" timeLoss="192.91" traveltime="1326.00">
+        <stop duration="10.00" arrival="22029.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3163.00" vehicle="bus_0_25130" depart="25192.00" arrival="26518.00" arrivalPos="140.15" duration="1326.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.45" depart="22039.00" type="DEFAULT_PEDTYPE" speedFactor="1.10" duration="4480.00" waitingTime="3143.00" timeLoss="192.91" traveltime="1327.00">
+        <stop duration="10.00" arrival="22049.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3143.00" vehicle="bus_0_25130" depart="25192.00" arrival="26519.00" arrivalPos="140.15" duration="1327.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.46" depart="22042.00" type="DEFAULT_PEDTYPE" speedFactor="1.17" duration="4477.00" waitingTime="3140.00" timeLoss="192.91" traveltime="1327.00">
+        <stop duration="10.00" arrival="22052.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3140.00" vehicle="bus_0_25130" depart="25192.00" arrival="26519.00" arrivalPos="140.15" duration="1327.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.47" depart="22065.00" type="DEFAULT_PEDTYPE" speedFactor="0.91" duration="4455.00" waitingTime="3117.00" timeLoss="192.91" traveltime="1328.00">
+        <stop duration="10.00" arrival="22075.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3117.00" vehicle="bus_0_25130" depart="25192.00" arrival="26520.00" arrivalPos="140.15" duration="1328.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.48" depart="22067.00" type="DEFAULT_PEDTYPE" speedFactor="1.15" duration="4453.00" waitingTime="3115.00" timeLoss="192.91" traveltime="1328.00">
+        <stop duration="10.00" arrival="22077.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3115.00" vehicle="bus_0_25130" depart="25192.00" arrival="26520.00" arrivalPos="140.15" duration="1328.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.49" depart="22075.00" type="DEFAULT_PEDTYPE" speedFactor="0.97" duration="4446.00" waitingTime="3107.00" timeLoss="192.91" traveltime="1329.00">
+        <stop duration="10.00" arrival="22085.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3107.00" vehicle="bus_0_25130" depart="25192.00" arrival="26521.00" arrivalPos="140.15" duration="1329.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.50" depart="22105.00" type="DEFAULT_PEDTYPE" speedFactor="1.13" duration="4416.00" waitingTime="3077.00" timeLoss="192.91" traveltime="1329.00">
+        <stop duration="10.00" arrival="22115.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3077.00" vehicle="bus_0_25130" depart="25192.00" arrival="26521.00" arrivalPos="140.15" duration="1329.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.51" depart="22110.00" type="DEFAULT_PEDTYPE" speedFactor="0.85" duration="4412.00" waitingTime="3072.00" timeLoss="192.91" traveltime="1330.00">
+        <stop duration="10.00" arrival="22120.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3072.00" vehicle="bus_0_25130" depart="25192.00" arrival="26522.00" arrivalPos="140.15" duration="1330.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.52" depart="22111.00" type="DEFAULT_PEDTYPE" speedFactor="1.02" duration="4411.00" waitingTime="3071.00" timeLoss="192.91" traveltime="1330.00">
+        <stop duration="10.00" arrival="22121.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3071.00" vehicle="bus_0_25130" depart="25192.00" arrival="26522.00" arrivalPos="140.15" duration="1330.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.53" depart="22114.00" type="DEFAULT_PEDTYPE" speedFactor="1.07" duration="4409.00" waitingTime="3068.00" timeLoss="192.91" traveltime="1331.00">
+        <stop duration="10.00" arrival="22124.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3068.00" vehicle="bus_0_25130" depart="25192.00" arrival="26523.00" arrivalPos="140.15" duration="1331.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.54" depart="22122.00" type="DEFAULT_PEDTYPE" speedFactor="1.04" duration="4401.00" waitingTime="3060.00" timeLoss="192.91" traveltime="1331.00">
+        <stop duration="10.00" arrival="22132.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3060.00" vehicle="bus_0_25130" depart="25192.00" arrival="26523.00" arrivalPos="140.15" duration="1331.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.55" depart="22126.00" type="DEFAULT_PEDTYPE" speedFactor="1.07" duration="4398.00" waitingTime="3056.00" timeLoss="192.91" traveltime="1332.00">
+        <stop duration="10.00" arrival="22136.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3056.00" vehicle="bus_0_25130" depart="25192.00" arrival="26524.00" arrivalPos="140.15" duration="1332.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.56" depart="22148.00" type="DEFAULT_PEDTYPE" speedFactor="1.15" duration="4376.00" waitingTime="3034.00" timeLoss="192.91" traveltime="1332.00">
+        <stop duration="10.00" arrival="22158.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3034.00" vehicle="bus_0_25130" depart="25192.00" arrival="26524.00" arrivalPos="140.15" duration="1332.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.57" depart="22156.00" type="DEFAULT_PEDTYPE" speedFactor="0.94" duration="4369.00" waitingTime="3026.00" timeLoss="192.91" traveltime="1333.00">
+        <stop duration="10.00" arrival="22166.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3026.00" vehicle="bus_0_25130" depart="25192.00" arrival="26525.00" arrivalPos="140.15" duration="1333.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.58" depart="22161.00" type="DEFAULT_PEDTYPE" speedFactor="0.97" duration="4364.00" waitingTime="3021.00" timeLoss="192.91" traveltime="1333.00">
+        <stop duration="10.00" arrival="22171.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3021.00" vehicle="bus_0_25130" depart="25192.00" arrival="26525.00" arrivalPos="140.15" duration="1333.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.59" depart="22166.00" type="DEFAULT_PEDTYPE" speedFactor="0.96" duration="4360.00" waitingTime="3016.00" timeLoss="192.91" traveltime="1334.00">
+        <stop duration="10.00" arrival="22176.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3016.00" vehicle="bus_0_25130" depart="25192.00" arrival="26526.00" arrivalPos="140.15" duration="1334.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.60" depart="22167.00" type="DEFAULT_PEDTYPE" speedFactor="0.85" duration="4359.00" waitingTime="3015.00" timeLoss="192.91" traveltime="1334.00">
+        <stop duration="10.00" arrival="22177.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3015.00" vehicle="bus_0_25130" depart="25192.00" arrival="26526.00" arrivalPos="140.15" duration="1334.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.61" depart="22171.00" type="DEFAULT_PEDTYPE" speedFactor="0.87" duration="4356.00" waitingTime="3011.00" timeLoss="192.91" traveltime="1335.00">
+        <stop duration="10.00" arrival="22181.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3011.00" vehicle="bus_0_25130" depart="25192.00" arrival="26527.00" arrivalPos="140.15" duration="1335.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.62" depart="22175.00" type="DEFAULT_PEDTYPE" speedFactor="0.97" duration="4352.00" waitingTime="3007.00" timeLoss="192.91" traveltime="1335.00">
+        <stop duration="10.00" arrival="22185.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="3007.00" vehicle="bus_0_25130" depart="25192.00" arrival="26527.00" arrivalPos="140.15" duration="1335.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.63" depart="22190.00" type="DEFAULT_PEDTYPE" speedFactor="1.03" duration="4338.00" waitingTime="2992.00" timeLoss="192.91" traveltime="1336.00">
+        <stop duration="10.00" arrival="22200.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2992.00" vehicle="bus_0_25130" depart="25192.00" arrival="26528.00" arrivalPos="140.15" duration="1336.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.64" depart="22195.00" type="DEFAULT_PEDTYPE" speedFactor="1.19" duration="4333.00" waitingTime="2987.00" timeLoss="192.91" traveltime="1336.00">
+        <stop duration="10.00" arrival="22205.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2987.00" vehicle="bus_0_25130" depart="25192.00" arrival="26528.00" arrivalPos="140.15" duration="1336.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.65" depart="22212.00" type="DEFAULT_PEDTYPE" speedFactor="0.98" duration="4317.00" waitingTime="2970.00" timeLoss="192.91" traveltime="1337.00">
+        <stop duration="10.00" arrival="22222.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2970.00" vehicle="bus_0_25130" depart="25192.00" arrival="26529.00" arrivalPos="140.15" duration="1337.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.66" depart="22220.00" type="DEFAULT_PEDTYPE" speedFactor="0.87" duration="4309.00" waitingTime="2962.00" timeLoss="192.91" traveltime="1337.00">
+        <stop duration="10.00" arrival="22230.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2962.00" vehicle="bus_0_25130" depart="25192.00" arrival="26529.00" arrivalPos="140.15" duration="1337.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.67" depart="22222.00" type="DEFAULT_PEDTYPE" speedFactor="0.97" duration="4308.00" waitingTime="2960.00" timeLoss="192.91" traveltime="1338.00">
+        <stop duration="10.00" arrival="22232.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2960.00" vehicle="bus_0_25130" depart="25192.00" arrival="26530.00" arrivalPos="140.15" duration="1338.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.68" depart="22233.00" type="DEFAULT_PEDTYPE" speedFactor="1.05" duration="4297.00" waitingTime="2949.00" timeLoss="192.91" traveltime="1338.00">
+        <stop duration="10.00" arrival="22243.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2949.00" vehicle="bus_0_25130" depart="25192.00" arrival="26530.00" arrivalPos="140.15" duration="1338.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.69" depart="22234.00" type="DEFAULT_PEDTYPE" speedFactor="1.02" duration="4297.00" waitingTime="2948.00" timeLoss="192.91" traveltime="1339.00">
+        <stop duration="10.00" arrival="22244.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2948.00" vehicle="bus_0_25130" depart="25192.00" arrival="26531.00" arrivalPos="140.15" duration="1339.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.70" depart="22239.00" type="DEFAULT_PEDTYPE" speedFactor="1.07" duration="4292.00" waitingTime="2943.00" timeLoss="192.91" traveltime="1339.00">
+        <stop duration="10.00" arrival="22249.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2943.00" vehicle="bus_0_25130" depart="25192.00" arrival="26531.00" arrivalPos="140.15" duration="1339.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.71" depart="22244.00" type="DEFAULT_PEDTYPE" speedFactor="0.91" duration="4288.00" waitingTime="2938.00" timeLoss="192.91" traveltime="1340.00">
+        <stop duration="10.00" arrival="22254.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2938.00" vehicle="bus_0_25130" depart="25192.00" arrival="26532.00" arrivalPos="140.15" duration="1340.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.72" depart="22269.00" type="DEFAULT_PEDTYPE" speedFactor="0.90" duration="4263.00" waitingTime="2913.00" timeLoss="192.91" traveltime="1340.00">
+        <stop duration="10.00" arrival="22279.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2913.00" vehicle="bus_0_25130" depart="25192.00" arrival="26532.00" arrivalPos="140.15" duration="1340.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.73" depart="22277.00" type="DEFAULT_PEDTYPE" speedFactor="0.93" duration="4256.00" waitingTime="2905.00" timeLoss="192.91" traveltime="1341.00">
+        <stop duration="10.00" arrival="22287.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2905.00" vehicle="bus_0_25130" depart="25192.00" arrival="26533.00" arrivalPos="140.15" duration="1341.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.74" depart="22302.00" type="DEFAULT_PEDTYPE" speedFactor="1.26" duration="4231.00" waitingTime="2880.00" timeLoss="192.91" traveltime="1341.00">
+        <stop duration="10.00" arrival="22312.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2880.00" vehicle="bus_0_25130" depart="25192.00" arrival="26533.00" arrivalPos="140.15" duration="1341.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.75" depart="22313.00" type="DEFAULT_PEDTYPE" speedFactor="0.82" duration="4221.00" waitingTime="2869.00" timeLoss="192.91" traveltime="1342.00">
+        <stop duration="10.00" arrival="22323.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2869.00" vehicle="bus_0_25130" depart="25192.00" arrival="26534.00" arrivalPos="140.15" duration="1342.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.76" depart="22314.00" type="DEFAULT_PEDTYPE" speedFactor="1.05" duration="4220.00" waitingTime="2868.00" timeLoss="192.91" traveltime="1342.00">
+        <stop duration="10.00" arrival="22324.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2868.00" vehicle="bus_0_25130" depart="25192.00" arrival="26534.00" arrivalPos="140.15" duration="1342.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.77" depart="22333.00" type="DEFAULT_PEDTYPE" speedFactor="1.19" duration="4202.00" waitingTime="2849.00" timeLoss="192.91" traveltime="1343.00">
+        <stop duration="10.00" arrival="22343.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2849.00" vehicle="bus_0_25130" depart="25192.00" arrival="26535.00" arrivalPos="140.15" duration="1343.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.78" depart="22341.00" type="DEFAULT_PEDTYPE" speedFactor="0.99" duration="4194.00" waitingTime="2841.00" timeLoss="192.91" traveltime="1343.00">
+        <stop duration="10.00" arrival="22351.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2841.00" vehicle="bus_0_25130" depart="25192.00" arrival="26535.00" arrivalPos="140.15" duration="1343.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.79" depart="22343.00" type="DEFAULT_PEDTYPE" speedFactor="1.12" duration="4193.00" waitingTime="2839.00" timeLoss="192.91" traveltime="1344.00">
+        <stop duration="10.00" arrival="22353.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2839.00" vehicle="bus_0_25130" depart="25192.00" arrival="26536.00" arrivalPos="140.15" duration="1344.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.80" depart="22346.00" type="DEFAULT_PEDTYPE" speedFactor="1.01" duration="4190.00" waitingTime="2836.00" timeLoss="192.91" traveltime="1344.00">
+        <stop duration="10.00" arrival="22356.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2836.00" vehicle="bus_0_25130" depart="25192.00" arrival="26536.00" arrivalPos="140.15" duration="1344.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.81" depart="22347.00" type="DEFAULT_PEDTYPE" speedFactor="1.14" duration="4190.00" waitingTime="2835.00" timeLoss="192.91" traveltime="1345.00">
+        <stop duration="10.00" arrival="22357.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2835.00" vehicle="bus_0_25130" depart="25192.00" arrival="26537.00" arrivalPos="140.15" duration="1345.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.82" depart="22349.00" type="DEFAULT_PEDTYPE" speedFactor="1.11" duration="4188.00" waitingTime="2833.00" timeLoss="192.91" traveltime="1345.00">
+        <stop duration="10.00" arrival="22359.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2833.00" vehicle="bus_0_25130" depart="25192.00" arrival="26537.00" arrivalPos="140.15" duration="1345.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.83" depart="22393.00" type="DEFAULT_PEDTYPE" speedFactor="0.93" duration="4145.00" waitingTime="2789.00" timeLoss="192.91" traveltime="1346.00">
+        <stop duration="10.00" arrival="22403.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2789.00" vehicle="bus_0_25130" depart="25192.00" arrival="26538.00" arrivalPos="140.15" duration="1346.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.84" depart="22398.00" type="DEFAULT_PEDTYPE" speedFactor="1.02" duration="4140.00" waitingTime="2784.00" timeLoss="192.91" traveltime="1346.00">
+        <stop duration="10.00" arrival="22408.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2784.00" vehicle="bus_0_25130" depart="25192.00" arrival="26538.00" arrivalPos="140.15" duration="1346.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.85" depart="22410.00" type="DEFAULT_PEDTYPE" speedFactor="1.11" duration="4129.00" waitingTime="2772.00" timeLoss="192.91" traveltime="1347.00">
+        <stop duration="10.00" arrival="22420.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2772.00" vehicle="bus_0_25130" depart="25192.00" arrival="26539.00" arrivalPos="140.15" duration="1347.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <personinfo id="flow_0.86" depart="22423.00" type="DEFAULT_PEDTYPE" speedFactor="1.10" duration="4116.00" waitingTime="2759.00" timeLoss="192.91" traveltime="1347.00">
+        <stop duration="10.00" arrival="22433.00" arrivalPos="6.50" actType="waiting"/>
+        <ride waitingTime="2759.00" vehicle="bus_0_25130" depart="25192.00" arrival="26539.00" arrivalPos="140.15" duration="1347.00" routeLength="14521.61" timeLoss="192.91"/>
+    </personinfo>
+    <tripinfo id="bus_0_25130" depart="25130.00" departLane="26006215#0_0" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="26570.00" arrivalLane="558107787_0" arrivalPos="429.03" arrivalSpeed="13.61" duration="1440.00" routeLength="14811.37" waitingTime="2.00" waitingCount="2" stopTime="233.00" timeLoss="202.51" rerouteNo="0" devices="tripinfo_bus_0_25130 fcd_bus_0_25130 person_bus_0_25130" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="bus_1_25610" depart="25610.00" departLane="61605505#2_0" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="27223.00" arrivalLane="754643297#0_0" arrivalPos="17.18" arrivalSpeed="2.51" duration="1613.00" routeLength="17765.22" waitingTime="7.00" waitingCount="6" stopTime="210.00" timeLoss="328.08" rerouteNo="0" devices="tripinfo_bus_1_25610 fcd_bus_1_25610" vType="bus" speedFactor="1.00" vaporized=""/>
+    <tripinfo id="bus_0_26090" depart="26090.00" departLane="26006215#0_0" departPos="12.10" departSpeed="0.00" departDelay="0.00" arrival="27435.00" arrivalLane="558107787_0" arrivalPos="429.03" arrivalSpeed="13.88" duration="1345.00" routeLength="14811.37" waitingTime="2.00" waitingCount="2" stopTime="140.00" timeLoss="200.70" rerouteNo="0" devices="tripinfo_bus_0_26090 fcd_bus_0_26090" vType="bus" speedFactor="1.00" vaporized=""/>
+</tripinfos>

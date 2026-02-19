@@ -1,0 +1,17 @@
+<configuration>
+    <input>
+        <net-file value="sumo_files/addis.net.xml"/>
+        <route-files value="sumo_files/routes.rou.xml"/>
+        <additional-files value="sumo_files/stops.add.xml,sumo_files/pt_vtypes.add.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="86400"/>
+    </time>
+
+    <processing>
+        <ignore-route-errors value="true"/>
+        <time-to-teleport value="300"/>
+    </processing>
+</configuration>

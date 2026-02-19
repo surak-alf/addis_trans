@@ -1,0 +1,13 @@
+<additional>
+    <personFlow id="flow_0" begin="21590" end="30000" probability="0.1">
+        <fromEdge value="26006215#0"/> 
+        <toEdge value="558107787"/>
+        <stop busStop="0.0" duration="10"/> <ride busStop="0.14" lines="0"/>    </personFlow>
+
+    <personFlow id="flow_1" begin="21590" end="30000" probability="0.1">
+        <fromEdge value="61605505#2"/>
+        <toEdge value="754643297#0"/>
+        <stop busStop="1.0" duration="10"/>
+        <ride busStop="1.24" lines="1"/>
+    </personFlow>
+</additional>

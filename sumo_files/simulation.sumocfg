@@ -1,0 +1,19 @@
+<configuration>
+    <input>
+        <net-file value="addis.net.xml"/>
+        <route-files value="routes.rou.xml"/>
+        <additional-files value="stops.add.xml,vtypes.xml,passengers.add.xml"/>
+    </input>
+
+    <output>
+        <tripinfo-output value="../outputs/tripinfo.xml"/>
+        <fcd-output value="../outputs/fcd_output.xml"/>
+    </output>
+
+    <time>
+        <begin value="0"/>
+        <end value="43200"/>
+        <step-length value="1"/>
+        <time-to-teleport value="-1"/>
+    </time>
+</configuration>

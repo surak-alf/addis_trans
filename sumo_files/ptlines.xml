@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2026-02-16T15:39:42.788022+03:00 by Eclipse SUMO netconvert 1.25.0
+<netconvertConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <osm-files value="osm/addis_map.osm.xml"/>
+    </input>
+
+    <output>
+        <output-file value="sumo_files/addis.net.xml"/>
+        <ptstop-output value="sumo_files/stops.add.xml"/>
+        <ptline-output value="sumo_files/ptlines.xml"/>
+    </output>
+
+    <projection>
+        <proj.utm value="true"/>
+    </projection>
+
+    <tls_building>
+        <tls.guess-signals value="true"/>
+    </tls_building>
+
+    <junctions>
+        <junctions.join value="true"/>
+    </junctions>
+
+</netconvertConfiguration>
+-->
+
+<ptLines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/ptlines_file.xsd">
+    <ptLine id="10533757" name="Sheger D23: Aba Kiros Roundabout =&gt; Megenagna Terminal" line="D23" type="bus" vClass="bus" color="76,76,255" completeness="1.00">
+        <route edges="61605508 531914720 749949695 1171577067 612810674#0 612810674#1 612810673#0 77488893 678134210 754643298 61605507 759916142 95850715#0 95850715#1 95850715#2 95850715#3 95850715#4 1136170022 200567856 200567867#0 200567867#1 1227210265 165070357#0 165070357#1 558107786 1096200708 558107787 1205481781 1176666665 1176666664 761078796 160623174 749949678"/>
+        <busStop id="11057053412" name="Aba Kiros Roundabout"/>
+        <busStop id="7105158908" name="Tafo Condominium 1"/>
+        <busStop id="7105158907" name="Tafo Condominium 2"/>
+        <busStop id="10823916391" name="Yeka 03"/>
+        <busStop id="7049921448" name="Zone 8"/>
+        <busStop id="7049921447" name="Hill Bottom (Recreation)"/>
+        <busStop id="7037183516" name="Meri"/>
+        <busStop id="7105158906" name="CMC (Apartments)"/>
+        <busStop id="7037183497" name="St. Micheal Church"/>
+        <busStop id="7098833729" name="Civil Service College"/>
+        <busStop id="7009876556" name="Se&apos;alite Mihret Church"/>
+        <busStop id="7098833728" name="Gurd-shola"/>
+        <busStop id="7022361366" name="Megenagna Terminal"/>
+    </ptLine>
+    <ptLine id="15485956" name="Anbessa AB079: Summit Condominuiums =&gt; Arat Kilo" line="AB079" type="bus" vClass="bus" color="226,87,37" completeness="0.36" missingBefore="5" missingAfter="13">
+        <route edges="582759601 531910935#0 531910935#1 759916161 749949698 749949672 754643298 61605507 759916142 95850715#0 95850715#1 95850715#2 95850715#3 95850715#4 1136170022 200567856 200567867#0 200567867#1 1227210265 165070357#0 165070357#1 558107786 1096200708 558107787 1205481781 1176666665 1176666664 761078796 160623174 749949678 749949676 749949710 749949709 755254703 1229501827 754690744 160623168 755224011 1183435940 36002849 755224010 755224009 755224008 755224007 755224006 755468016 755224005#0 755224005#1 755224005#2 760620930 1188339685#0 1188339685#1 1159401580 760620928#0 760620928#1"/>
+        <busStop id="7037183525" name="Safari"/>
+        <busStop id="7098833731" name="Sunshine Apartments"/>
+        <busStop id="7105158906" name="CMC (Apartments)"/>
+        <busStop id="7037183497" name="St. Micheal Church"/>
+        <busStop id="7098833730" name="St. Michael"/>
+        <busStop id="7098833729" name="Civil Service College"/>
+        <busStop id="7009876556" name="Se&apos;alite Mihret Church"/>
+        <busStop id="7098833728" name="Gurd-shola"/>
+        <busStop id="7022361366@15485956" name="Megenagna Terminal"/>
+        <busStop id="7037142469" name="Megenagna"/>
+        <busStop id="7037142417" name="Marathon Motor (Megenagna)"/>
+        <busStop id="10781643830" name="Shola Abyssinia Bank"/>
+    </ptLine>
+    <ptLine id="15903259" name="Minibus LK 001: Aba Kiros =&gt; Summit Condominiums" line="Minibus LK 001" type="share_taxi" vClass="taxi" color="0,0,139" completeness="0.60" missingAfter="2">
+        <route edges="61605508 531914720 749949695 1171577067 612810674#0 612810674#1 612810673#0 77488893 678134210 754643298 61605507 759916142 749949673 749949700 759916162 582759600#0 582759600#1 1172425434 1172425433 77488890"/>
+        <busStop id="10925966510" name="Aba Kiros"/>
+        <busStop id="10886427072" name="Yetebaberut"/>
+        <busStop id="10886991032" name="Safari"/>
+    </ptLine>
+    <ptLine id="15903452" name="Minibus LK 003: Aba Kiros =&gt; Bole Arabsa" line="Minibus LK 003" type="share_taxi" vClass="taxi" color="0,0,139" completeness="0.50" missingAfter="2">
+        <route edges="61605508 531914720 749949695 749949697 1176155644 61605509 1176155645 749949694 580787388#0 580787388#1 580787388#2 580787388#3 581473012 581473016 580787385#0 580787385#1 580787385#2"/>
+        <busStop id="10925966510" name="Aba Kiros"/>
+        <busStop id="10926074605" name="Ayat"/>
+    </ptLine>
+    <ptLine id="15905757" name="Minibus LK 008: Aba Kiros =&gt; Goro" line="Minibus LK 008" type="share_taxi" vClass="taxi" color="0,0,139" completeness="0.60" missingAfter="2">
+        <route edges="61605508 531914720 749949695 749949697 1176155644 45190334#0 45190334#1 45190334#2 1175980199#1"/>
+        <busStop id="10925966510" name="Aba Kiros"/>
+        <busStop id="10925966508" name="Gebreal"/>
+        <busStop id="10925966506" name="Derartu Adebabay"/>
+    </ptLine>
+    <ptLine id="15905794" name="Minibus LK 009: Aba Kiros =&gt; Megenagna" line="Minibus LK 009" type="share_taxi" vClass="taxi" color="0,0,139" completeness="1.00">
+        <route edges="61605508 531914720 749949695 1171577067 612810674#0 612810674#1 612810673#0 77488893 678134210 754643298 61605507 759916142 95850715#0 95850715#1 95850715#2 95850715#3 95850715#4 1136170022 200567856 200567867#0 200567867#1 1227210265 165070357#0 165070357#1 558107786 1096200708 558107787 1205481781 1176666665 1176666664 761078796"/>
+        <busStop id="10925966510" name="Aba Kiros"/>
+        <busStop id="10925966507" name="Derartu Adebabay"/>
+        <busStop id="10925966505" name="Meshageria"/>
+        <busStop id="10886427072" name="Yetebaberut"/>
+        <busStop id="10886991027" name="Meshualekia"/>
+        <busStop id="10926896756" name="Se&apos;alite Mihret"/>
+        <busStop id="10886991026" name="Megenagna"/>
+    </ptLine>
+    <ptLine id="16290770" name="Anbessa AB022: Summit Condominiums =&gt; Legehar (Old Train Station)" line="AB022" type="bus" vClass="bus" color="226,87,37" completeness="0.53" missingBefore="3" missingAfter="4">
+        <route edges="582759601 531910935#0 531910935#1 759916161 749949698 749949672 754643298 61605507 759916142 95850715#0 95850715#1 95850715#2 95850715#3 95850715#4 1136170022 200567856 200567867#0 200567867#1 1227210265 165070357#0 165070357#1 558107786 1096200708 558107787 -24728136 381604297#0 381604297#1 1175976365#0 1175976365#1 1185489999 558111305#0 558111305#1 558111305#2 1181777364 755468016 755224005#0 755224005#1 755224005#2 760620930 1188339685#0 1188339685#1 1159401580 760620928#0 760620928#1"/>
+        <busStop id="7037183525" name="Safari"/>
+        <busStop id="7037183513" name="Yetebaberut"/>
+        <busStop id="7105158906" name="CMC (Apartments)"/>
+        <busStop id="7098833730" name="St. Michael"/>
+        <busStop id="7098833729" name="Civil Service College"/>
+        <busStop id="7037183493" name="Management Institute"/>
+        <busStop id="11167384416" name="Gurd-shola"/>
+        <busStop id="11034647605" name="Megenagna"/>
+    </ptLine>
+    <ptLine id="16761406" name="Anbessa AB011: Summit Condominiums =&gt; Piassa Arada" line="AB011" type="bus" vClass="bus" color="226,87,37" completeness="0.37" missingBefore="5" missingAfter="7">
+        <route edges="582759601 531910935#0 531910935#1 759916161 749949698 749949672 754643298 61605507 759916142 95850715#0 95850715#1 95850715#2 95850715#3 95850715#4 1136170022 200567856 200567867#0 200567867#1 1227210265 25965883#0 25965883#1 25965883#2 1061203039 581727282 1176666668 581727283#0 581727283#1 755468007 755468006 381604301 1229670561 1205481780 381604297#0 381604297#1 1175976365#0 1175976365#1 1185489999 558111305#0 558111305#1 558111305#2 1181777364 755468016 755224005#0 755224005#1 755224005#2 760620930 1188339685#0 1188339685#1 1159401580 760620928#0 760620928#1"/>
+        <busStop id="7037183525" name="Safari"/>
+        <busStop id="7037183513" name="Yetebaberut"/>
+        <busStop id="7098833730" name="St. Michael"/>
+        <busStop id="7098833729" name="Civil Service College"/>
+        <busStop id="7110438110" name="Lamberet (Queens)"/>
+        <busStop id="7037142471" name="Abysinia Cafe Area"/>
+        <busStop id="11034647605" name="Megenagna"/>
+    </ptLine>
+    <ptLine id="16814054" name="Sheger SH066: Aba Kiros Roundabout =&gt; Megenagna Terminal" line="SH066" type="bus" vClass="bus" color="76,76,255" completeness="1.00">
+        <route edges="61605508 531914720 749949695 1171577067 612810674#0 612810674#1 612810673#0 77488893 678134210 754643298 61605507 759916142 95850715#0 95850715#1 95850715#2 95850715#3 95850715#4 1136170022 200567856 200567867#0 200567867#1 1227210265 165070357#0 165070357#1 558107786 1096200708 558107787 1205481781 1176666665 1176666664 761078796 160623174 749949678"/>
+        <busStop id="11057053412" name="Aba Kiros Roundabout"/>
+        <busStop id="7105158908" name="Tafo Condominium 1"/>
+        <busStop id="7105158907" name="Tafo Condominium 2"/>
+        <busStop id="10823916391" name="Yeka 03"/>
+        <busStop id="7049921448" name="Zone 8"/>
+        <busStop id="7049921447" name="Hill Bottom (Recreation)"/>
+        <busStop id="7037183516" name="Meri"/>
+        <busStop id="7105158906" name="CMC (Apartments)"/>
+        <busStop id="7037183497" name="St. Micheal Church"/>
+        <busStop id="7098833729" name="Civil Service College"/>
+        <busStop id="7009876556" name="Se&apos;alite Mihret Church"/>
+        <busStop id="7098833728" name="Gurd-shola"/>
+        <busStop id="7022361366" name="Megenagna Terminal"/>
+    </ptLine>
+</ptLines>

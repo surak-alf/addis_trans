@@ -1,0 +1,18 @@
+<routes>
+    <vehicle id="0" route="0" type="bus" depart="21600" line="0">
+        <param key="gtfs.route_name" value="AB097"/>
+        <param key="gtfs.trip_headsign" value="Megenagna Terminal"/>
+    </vehicle>
+    <vehicle id="1" route="1" type="bus" depart="21600" line="1">
+        <param key="gtfs.route_name" value="AB097"/>
+        <param key="gtfs.trip_headsign" value="Legedadi Mission"/>
+    </vehicle>
+    <vehicle id="4" route="4" type="bus" depart="21600" line="4">
+        <param key="gtfs.route_name" value="AB049"/>
+        <param key="gtfs.trip_headsign" value="Megenagna Terminal"/>
+    </vehicle>
+    <vehicle id="5" route="5" type="bus" depart="21600" line="5">
+        <param key="gtfs.route_name" value="AB049"/>
+        <param key="gtfs.trip_headsign" value="Ayat Chefe Condominium"/>
+    </vehicle>
+</routes>

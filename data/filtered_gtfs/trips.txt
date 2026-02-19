@@ -1,0 +1,5 @@
+trip_id,service_id,route_id,shape_id,direction_id,trip_headsign
+0,0,10400029,10399952,0,Megenagna Terminal
+1,0,10400029,10399951,1,Legedadi Mission
+4,0,10400405,10400404,0,Megenagna Terminal
+5,0,10400405,10400403,1,Ayat Chefe Condominium
